@@ -119,7 +119,7 @@
             .attr("x", width - 5)
             .attr("y", 15);
 
-    d3.csv("data2.csv", function(error, data) {
+    d3.csv("data.csv", function(error, data) {
         var accessor = candlestick.accessor();
 
         data = data.slice(0, 200).map(function(d) {
